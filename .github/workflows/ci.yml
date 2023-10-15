@@ -23,10 +23,7 @@ on:
 jobs:
   build:
 
-    runs-on: ${{matrix.os}}
-    strategy: 
-      matrix:
-        os: [ubuntu_latest]
+    runs-on: ubuntu_latest
 
     steps:
     - uses: actions/checkout@v3
